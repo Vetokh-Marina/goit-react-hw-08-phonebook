@@ -11,14 +11,23 @@ export default function ContactList() {
     const onDeleteContact = id => dispatch(phonebookOperations.deleteContact(id));
 
     return (
-        <ul className={s.list}>
-            {contacts.map(({ id, name, number }) => (
-                <li key={id} className={s.item}>
-                    <p className={s.text}>
-                        {name}: {number}
-                    </p>
-                </li>
-            ))}
-        </ul>
+        <div className={s.container}>
+            <ul className={s.list}>
+                {contacts.map(({ id, name, number }) => (
+                    <li key={id} className={s.item}>
+                        <p className={s.text}>
+                            {name}: {number}
+                        </p>
+                        <button
+                            type="button"
+                            onClick={() => onDeleteContact(id)}
+                            className={s.button}
+                        >
+                            Delete
+                        </button>
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 }

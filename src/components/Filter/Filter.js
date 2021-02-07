@@ -12,7 +12,7 @@ export default function Filter() {
         <div className={s.container}>
             <label className={s.label}>
                 Find contacts by name
-        <input
+               <input
                     type="text"
                     value={value}
                     onChange={onChange}

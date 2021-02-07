@@ -41,4 +41,3 @@ export default combineReducers({
     filter,
     loading,
 });
-© 2021 GitHub, Inc.

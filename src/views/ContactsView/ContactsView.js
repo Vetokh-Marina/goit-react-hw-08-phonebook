@@ -5,7 +5,7 @@ import ContactForm from '../../components/ContactForm';
 import Filter from '../../components/Filter';
 import { fetchContacts } from '../../redux/phonebook/phonebook-operations';
 import s from './ContactsView.module.css';
-import PhoneIcon from '../../components/PhoneIcon';
+
 
 export default function ContactsView() {
     const dispatch = useDispatch();
@@ -16,9 +16,9 @@ export default function ContactsView() {
         <div className={s.container}>
             <h1 className={s.title}>
                 {' '}
-                <span>
+                {/* <span>
                     <PhoneIcon color="primary" style={{ fontSize: 50 }} />
-                </span>{' '}
+                </span>{' '} */}
         Phonebook
       </h1>
             <ContactForm />
