@@ -16,11 +16,8 @@ export default function ContactsView() {
         <div className={s.container}>
             <h1 className={s.title}>
                 {' '}
-                {/* <span>
-                    <PhoneIcon color="primary" style={{ fontSize: 50 }} />
-                </span>{' '} */}
-        Phonebook
-      </h1>
+               Phonebook
+            </h1>
             <ContactForm />
             <h2>Contacts</h2>
             <Filter />

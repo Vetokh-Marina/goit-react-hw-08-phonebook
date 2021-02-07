@@ -58,7 +58,7 @@ export default function LoginView() {
 
                 <button className={s.button} type="submit">
                     Sign in
-        </button>
+                </button>
             </form>
         </div>
     );

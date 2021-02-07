@@ -80,7 +80,7 @@ export default function RegisterView() {
 
                 <button className={s.button} type="submit">
                     Create account
-        </button>
+                </button>
             </form>
         </div>
     );
